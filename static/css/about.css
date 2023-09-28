@@ -1,0 +1,64 @@
+.dynamicDiv{ 
+    text-align: center;
+}
+
+
+.mt-lg-4 {
+    margin-top: 1.5rem!important;
+}
+
+.justify-content-lg-around {
+    justify-content: space-around!important;
+}
+.justify-content-center {
+    justify-content: center!important;
+}
+.flex-wrap {
+    flex-wrap: wrap!important;
+}
+.d-flex {
+    display: flex!important;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.xyz{
+    height: 400px;
+    width: 10%;
+}
+
+.outercontainer{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.innercontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    
+    
+}
+
+body{
+    background-image: url('/static/image/bg1.jpg')
+  }
+  
+.mb-1{
+    text-align: center;
+}
+.h4 mt-4 fw-600{
+    text-align: center;
+}
+#xy{
+    text-align: center;
+}

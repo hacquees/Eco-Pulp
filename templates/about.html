@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block title %}
+About
+{% endblock %}
+
+
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
+
+
+{% block content%}
+<div class="dynamicDiv" id="dd.0.2.0">
+  <div class="container mt-lg-6 mt-5">
+    <div class="row">
+      <div class="col-lg-10 col-xl-6 mx-auto text-center">
+        <h1 >About Us</h1>
+        <p>Welcome to EcoPulp, a website dedicated to promoting the
+          eco-friendly practices of recycling and reusing paper. We 
+          are passionate about creating a sustainable future for our
+          planet and believe that every individual and business has 
+          a responsibility to make a positive impact.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<divclass="d-flex flex-wrap justify-content-center justify-content-lg-around justify-content-xl-between mt-lg-4 outercontainer">
+<div class="innercontainer">
+  <div class="w-xs-420p py-4 px-5 mt-4 box-shadow-small border mb-2 box">
+    <img class="w-xs-80p" alt="Customer Obsession Icon"
+      src="static/image/no poverty (1).png">
+    <h3 class="h4 mt-4 fw-600" id="xy">No Poverty</h3>
+    <p class="mb-1">Economic growth must be <br> inclusive to provide sustainable <br>jobs and promote equality
+    </p>
+  </div>
+    <div class="w-xs-420p py-4 px-5 mt-4 box-shadow-small border mb-2 box">
+      <img class="w-xs-80p" alt="Customer Obsession Icon"
+        src="static/image/reduce ineq (1).png">
+      <h3 class="h4 mt-4 fw-600" id="xy">Reduced Inequalities</h3>
+      <p class="mb-1">To reduce inequalities, policies <br>should be universal in principle, <br>paying attention to the needs <br>of disadvantaged and marginalized<br> populations.
+      </p>
+    </div>
+
+      <div class="w-xs-420p py-4 px-5 mt-4 box-shadow-small border mb-2 box">
+        <img class="w-xs-80p" alt="Customer Obsession Icon"
+          src="static/image/responsible_consumption (1).png">
+        <h3 class="h4 mt-4 fw-600" id="xy">Sustainable consumption <br>and production</h3>
+        <p class="mb-1">Unsustainable patterns of consumption <br>and production are root causes of the <br>triple planetary crises of climate change,<br> biodiversity loss and pollution.
+        </p>
+      </div>
+    </div>
+</div>
+
+<div class="innercontainer">
+  <div class="w-xs-420p py-4 px-5 mt-4 box-shadow-small border mb-2 box">
+    <img class="w-xs-80p" alt="Customer Obsession Icon"
+      src="static/image/climate action (1).png">
+    <h3 class="h4 mt-4 fw-600" id="xy">Climate</h3>
+    <p class="mb-1">global consumption of CO2 has<br> increased over 50% from 1990.
+    </p>
+  </div>
+    <div class="w-xs-420p py-4 px-5 mt-4 box-shadow-small border mb-2 box">
+      <img class="w-xs-80p" alt="Customer Obsession Icon"
+        src="static/image/life on land (1).png">
+      <h3 class="h4 mt-4 fw-100 " id="xy">Life on land</h3>
+      <p class="mb-1">forest are home to more<br> than 80 % of all terrestrial <br>species of animals, plants and trees.
+      </p>
+    </div>
+
+      <div class="w-xs-420p py-4 px-5 mt-4 box-shadow-small border mb-2 box" >
+        <img class="w-xs-80p" alt="Customer Obsession Icon"
+          src="static/image/decent work (1).png">
+        <h3 class="h4 mt-4 fw-600" id="xy">Decent work and economic<br> growth</h3>
+        <p class="mb-1">one fifth of young <br>people are not in education,<br> employment and training
+      </div>
+    </div>
+  
+</div>
+
+
+
+
+{% endblock %}

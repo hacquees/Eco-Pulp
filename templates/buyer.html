@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+{% block title %}
+Buyer
+{% endblock %}
+
+
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/buyer.css') }}">
+{% endblock %}
+
+
+{% block content%}
+<div class="outercontainer">
+
+
+  <div class="leftpanel">
+    <div class="product">
+
+      <div class="card">
+        <img src="{{ url_for('static', filename='image/dairy.jpg') }}" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4 style="width: 250px; display:inline-block;"><b>Diary</b></h4>
+          <h4 style="display:inline-block;"><b> ₹110</b></h4>
+
+
+        </div>
+      </div>
+      <div class="card">
+        <img src="{{ url_for('static', filename='image/icard.jpg') }}" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4 style="width: 250px; display:inline-block;"><b>ID Card</b></h4>
+          <h4 style="display:inline-block;"><b> ₹35</b></h4>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="centerpanel">
+    <div class="formbold-main-wrapper">
+
+      <div class="formbold-form-wrapper">
+        <form action="/bill" method="POST">
+          <div class="formbold-mb-5">
+            <label for="name" class="formbold-form-label"> Full Name </label>
+            <input type="text" name="name" id="name" required placeholder="Full Name" class="formbold-form-input" />
+          </div>
+          <div class="formbold-mb-5">
+            <label for="phone" class="formbold-form-label"> Phone Number </label>
+            <input type="text" name="phone" required id="phone" placeholder="Enter your phone number"
+              class="formbold-form-input" />
+          </div>
+          <div class="formbold-mb-5">
+            <label for="email" class="formbold-form-label"> Email Address </label>
+            <input type="email" name="email" required id="email" placeholder="Enter your email" class="formbold-form-input" />
+          </div>
+          <div class="formbold-mb-5 formbold-pt-3">
+            <label class="formbold-form-label formbold-form-label-2">
+              Shopping Cart
+            </label>
+            <div class="flex flex-wrap formbold--mx-3">
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <input type="text" name="notebook" required id="notebook" placeholder="Number of Notebook"
+                    class="formbold-form-input" />
+                </div>
+              </div>
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <input type="text" name="idcard" required  id="icard" placeholder="Number of idcard"
+                  class="formbold-form-input" />
+                </div>
+              </div>
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <input type="text" name="diary" required id="dairy" placeholder="Number of diary"
+                    class="formbold-form-input" />
+                </div>
+              </div>
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <input type="text" name="clearbag" required id="clearbag" placeholder="Number of clear bags"
+                    class="formbold-form-input" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="formbold-mb-5 formbold-pt-3">
+            <label class="formbold-form-label formbold-form-label-2">
+              Delivery Address
+            </label>
+            <div class="flex flex-wrap formbold--mx-3">
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <input type="text" name="area" id="area" required placeholder="Enter area" class="formbold-form-input" />
+                </div>
+              </div>
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <input type="text" name="city" id="city" required placeholder="Enter city" class="formbold-form-input" />
+                </div>
+              </div>
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <input type="text" name="state" id="state"  required placeholder="Enter state" class="formbold-form-input" />
+                </div>
+              </div>
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <input type="text" name="postcode" id="post-code" required placeholder="Postal Code"
+                    class="formbold-form-input" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button class="formbold-btn">BUY</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+  <div class="rightpanel">
+    <div class="product">
+
+      <div class="card">
+        <img src="{{ url_for('static', filename='image/nb.jpg') }}" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4 style="width: 250px; display:inline-block;"><b>Notebook</b></h4>
+          <h4 style="display:inline-block;"><b> ₹60</b></h4>
+
+
+        </div>
+      </div>
+      <div class="card">
+        <img src="{{ url_for('static', filename='image/clearbag.jpg') }}" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4 style="width: 250px; display:inline-block;"><b>Clear Bag</b></h4>
+          <h4 style="display:inline-block;"><b> ₹30</b></h4>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</div>
+{% endblock %}

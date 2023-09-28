@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% block title %}
+Contact Us
+{% endblock %}
+
+
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+{% endblock %}
+
+
+{% block content%}
+<script>
+    $("#submitForm").click(function() {
+       alert(" Form Submitted,Thank you. we'll connect you soon");
+    });
+ </script>
+
+<div class="formbold-main-wrapper">
+    <div class="formbold-form-wrapper">
+       
+      <form action="/contact" method="POST">
+        <div class="formbold-input-flex">
+
+          <div>
+            <label for="firstname"  class="formbold-form-label"> First Name </label>
+            <input
+              type="text"
+              required
+              name="fname"
+              id="firstname"
+              placeholder="john"
+              class="formbold-form-input"
+            />
+          </div>
+  
+          <div>
+            <label for="lastname" class="formbold-form-label"> Last name </label>
+            <input
+              type="text"
+              name="lname"
+              required
+              id="lastname"
+              placeholder="Toy"
+              class="formbold-form-input"
+            />
+          </div>
+        </div>
+  
+        <div class="formbold-input-flex">
+          <div>
+              <label for="email" class="formbold-form-label"> Email </label>
+              <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="example@email.com"
+              class="formbold-form-input"
+              style="width: 490px;"
+              />
+          </div>
+  
+          
+        </div>
+  
+        <div class="formbold-mb-3 formbold-input-wrapp">
+          <label for="phone" class="formbold-form-label">Pincode &  Phone </label>
+  
+          <div>
+            <input
+              type="text"
+              name="areacode"
+              id="areacode"
+              required
+              placeholder="Area code"
+              class="formbold-form-input formbold-w-45"
+            />
+            
+  
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              required
+              placeholder="Phone number"
+              class="formbold-form-input"
+            />
+          </div>
+        </div>
+  
+        <div class="formbold-mb-3">
+          <label for="age" class="formbold-form-label">Message </label>
+          <input
+            type="message"
+            name="msg"
+            required
+            id="age"
+            class="formbold-form-input"
+            placeholder="your message here.."
+          />
+        </div>
+  
+     <button class="formbold-btn id="submitForm">Contact Request</button>
+      </form>
+    </div>
+  </div>
+{% endblock %}
