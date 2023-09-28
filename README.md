@@ -2,7 +2,6 @@
 
 Welcome to EcoPulp, an innovative initiative dedicated to the responsible collection, recycling, and conservation of unused exam paper sheets. Our mission is to provide an easy, bulk-friendly solution to minimize paper wastage, save trees, water, and provide employment opportunities to marginalized communities.
 
-![EcoPulp Logo](static/images/logo.svg)
 
 ## What We Do
 
